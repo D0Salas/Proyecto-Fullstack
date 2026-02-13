@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* ===== IMAGEN DE FONDO ===== */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("fondo.jpg") center/cover no-repeat;
+    z-index: -2;
+}
+
+/* ===== OSCURECIMIENTO + BLUR ===== */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+/* ===== CONTENIDO CENTRADO ===== */
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ===== TITULO ===== */
+h1 {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 25px rgba(255,255,255,0.6);
+}
+
+/* ===== COUNTDOWN ===== */
+.countdown {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 60px;
+}
+
+.time-box span {
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 0 0 25px rgba(255,255,255,0.9);
+}
+
+.time-box p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* ===== BOTON ===== */
+.btn {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 18px 45px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
